@@ -75,6 +75,28 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script>
   // Add your code here!
+  $(function() {
+    console.log('Let’s get ready to party with jQuery!');
+  });
+  $('img').addClass('image-center');
+  $('article p').last().remove();
+  const randomSize = Math.floor(Math.random()*101);
+  $('h1').css('font-size', randomSize);
+  $('ol').append('<li>Click on the puppy to make it disappear!</li>');
+  $(function() {
+    $('aside').fadeOut(2000, function() {
+      $(this).fadeIn().html('<p>The list was silly. We apologize profusely.</p>')
+    })
+  })
+  $('.form-control').on('change', function() {
+    let newColor = `rgb(${$('.form-control')[0].value}, 
+        ${$('.form-control')[1].value}, 
+        ${$('.form-control')[2].value})`;
+    $('body').css('background-color', newColor);
+  });
+  $('img').on('click', function() {
+    $(this).remove();
+  })
 </script>
 </body>
 

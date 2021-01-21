@@ -1,0 +1,23 @@
+body {
+    background-color: plum;
+    text-align: center;
+}
+
+table {
+    margin: auto auto 15px;
+    background-color: rosybrown;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: lightslategray;
+    border: 1px solid #ddd;
+}
+
+button {
+    border-radius: 5px;
+}
